@@ -224,7 +224,7 @@ function detectBlow() {
     for (let i = 0; i < dataArray.length; i++) volume += dataArray[i];
     volume /= dataArray.length;
 
-    if (volume > 20) blowOut();
+    if (volume > 50) blowOut();
     else requestAnimationFrame(detectBlow);
 }
 
